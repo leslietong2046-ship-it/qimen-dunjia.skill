@@ -177,3 +177,22 @@ python qimen.py --question "今天出行顺利吗" --output result.md
 ---
 
 *"学得此机关，识破世间人"*
+
+## Install
+
+```bash
+# Clone and copy to your OpenClaw skills directory
+git clone https://github.com/leslietong2046-ship-it/qimen-dunjia.skill.git
+cp -r qimen-dunjia.skill ~/.openclaw/skills/
+
+# Or just paste the repo URL in your OpenClaw chat
+```
+
+## More Skills
+
+- [kaiqiao](https://github.com/leslietong2046-ship-it/kaiqiao.skill) - Agent什么时候该问/该拦/该闭嘴干
+- [一句话出方案](https://github.com/leslietong2046-ship-it/yijuhua-chufangan.skill) - 一句话输入5步出完整方案
+- [锐评](https://github.com/leslietong2046-ship-it/ruiping.skill) - 追观点不追热点
+- [奇门遁甲](https://github.com/leslietong2046-ship-it/qimen-dunjia.skill) - 一句话直断九宫排盘
+- [黄大仙灵签](https://github.com/leslietong2046-ship-it/huangdaxian-lingqian.skill) - 抽签解签心诚则灵
+
