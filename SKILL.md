@@ -1,3 +1,18 @@
+---
+name: qimen-dunjia
+description: |
+  三式之首，帝王之学。奇门遁甲直断，输入时辰问题直接给结论。九宫+用神+格局+应期完整输出。
+  触发关键词：奇门直断、奇门遁甲、问事直断、断卦判断、时盘分析、看看时盘、问跳槽、问事业
+version: 2.0.3
+metadata:
+  openclaw:
+    requires:
+      env: []
+      bins: ["python3"]
+    primaryEnv: ""
+    emoji: "🌀"
+---
+
 # 奇门直断
 
 > **三式之首，帝王之学。**

@@ -4,6 +4,10 @@
 
 直断，不教学。输入问题，直接给结论。工程化格式输出，九宫+用神+格局+应期一个不少。时家奇门转盘法，八门九星八神全解。
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://clawhub.ai/skills/qimen-dunjia-skill)
+[![Version](https://img.shields.io/badge/version-2.0.0-green)]()
+
 ---
 
 ## 🎯 一句话说明
@@ -24,7 +28,7 @@
 
 ---
 
-## 🔮 核心能力
+## ✨ 核心能力
 
 - ✅ 时家奇门九宫完整排盘（地盘+天盘+人盘+神盘）
 - ✅ 八门九星八神自动落宫
@@ -35,24 +39,44 @@
 
 ---
 
-## 🛠️ 两种用法
+## 🚀 安装使用
 
-### 作为Skill使用
-装上SKILL.md，直接问问题。Agent自动排盘断局。
-
-### 命令行使用
+### OpenClaw CLI 安装
 ```bash
-# 直接问
-python qimen.py --question "我要创业能成吗"
+# 安装 skill
+clawhub install qimen-dunjia-skill
 
-# 指定时间起局
-python qimen.py --time "2026-05-03 14:30"
-
-# 保存结果
-python qimen.py --question "今天出行顺利吗" --output result.md
+# 查看帮助
+cat SKILL.md
 ```
 
-零依赖，纯Python标准库。
+### 直接使用
+```
+帮我断一卦，这个项目能不能接
+```
+```
+今天出行顺利吗
+```
+```
+跳槽好不好
+```
+
+### CLI 排盘器
+```bash
+# 直接问
+python references/qimen.py --question "我要创业能成吗"
+
+# 指定时间起局
+python references/qimen.py --time "2026-05-03 14:30"
+
+# 保存结果
+python references/qimen.py --question "今天出行顺利吗" --output result.md
+
+# 查看帮助
+python references/qimen.py --help
+```
+
+零依赖，纯 Python 标准库。
 
 ---
 
@@ -68,7 +92,7 @@ python qimen.py --question "今天出行顺利吗" --output result.md
 
 求测时间：2026年5月3日 14时
 干支历：丙辰年 三月十八 辛未日 辛未时
-节    气：立夏
+节气：立夏
 遁    局：阳遁 第7局
 值    符：天心  值使：开门
 
@@ -121,78 +145,29 @@ python qimen.py --question "今天出行顺利吗" --output result.md
 
 ---
 
-## 🔥 吉凶格局
+## 📁 文件结构
 
-### 遇到这些，运气不错
-
-| 格局 | 组成 | 含义 |
-|------|------|------|
-| 🐉 龙回首 | 戊+丙 | 谋事大吉 |
-| 🐦 鸟跌穴 | 丙+戊 | 百事洞彻 |
-| ⭐ 天遁 | 丙+生门+丁 | 最强吉格 |
-| 🤝 三奇得使 | 乙/丙/丁+值使 | 机会难得 |
-
-### 遇到这些，小心为上
-
-| 格局 | 组成 | 含义 |
-|------|------|------|
-| 💸 龙逃走 | 乙+辛 | 破财之象 |
-| 😱 蛇夭矫 | 癸+丁 | 虚惊不宁 |
-| ⚔️ 白入荧 | 庚+丙 | 贼来偷营 |
-| 💀 大格 | 庚+癸 | 百事皆凶 |
-
----
-
-## 🤔 FAQ
-
-**这准吗？**
-奇门遁甲是古代决策模型，不是水晶球。它提供的是一种结构化分析视角，帮你看到盲区。信不信由你，但用了总比干想强。
-
-**和网上排盘工具有什么区别？**
-那些只给你一张图。这个直接告诉你什么意思、该怎么做。
-
-**需要学奇门遁甲吗？**
-不需要。装上就问，问完就看结论。
-
----
-
-## 🔗 互链
-
-- 🦐 [虾评主页](https://xiaping.coze.site/skill/8eaa7f67-e2d4-4575-afa1-8dcf14211d6d?ref=8fa30089-2274-441a-a0c3-b2bd9aab0f8c)
-- 💡 [开窍 — 让Agent学会该问才问](https://github.com/leslietong2046-ship-it/kaiqiao.skill)
-- 📋 [一句话出方案 — 3分钟出完整方案](https://github.com/leslietong2046-ship-it/yijuhua-chufangan.skill)
-- 🔥 [锐评 — 输入事件给出犀利观点](https://github.com/leslietong2046-ship-it/ruiping.skill)
-
----
-
-## 📜 更新日志
-
-### v1.0.0 (2026-05-03)
-- 🎉 首发上线
-- 时家奇门九宫完整排盘
-- 八门九星八神自动落宫
-- 20+场景用神自动匹配
-- Python排盘CLI工具
-
----
-
-*"学得此机关，识破世间人"*
-
-## Install
-
-```bash
-# Clone and copy to your OpenClaw skills directory
-git clone https://github.com/leslietong2046-ship-it/qimen-dunjia.skill.git
-cp -r qimen-dunjia.skill ~/.openclaw/skills/
-
-# Or just paste the repo URL in your OpenClaw chat
+```
+├── SKILL.md              # OpenClaw Skill 定义（直断输出格式）
+├── README.md             # 本文件
+├── requirements.txt      # Python 依赖
+├── .clawhubignore        # ClawHub 忽略规则
+└── references/           # 参考资源
+    └── qimen.py          # CLI 排盘器（零依赖）
 ```
 
-## More Skills
+---
 
-- [kaiqiao](https://github.com/leslietong2046-ship-it/kaiqiao.skill) - Agent什么时候该问/该拦/该闭嘴干
-- [一句话出方案](https://github.com/leslietong2046-ship-it/yijuhua-chufangan.skill) - 一句话输入5步出完整方案
-- [锐评](https://github.com/leslietong2046-ship-it/ruiping.skill) - 追观点不追热点
-- [奇门遁甲](https://github.com/leslietong2046-ship-it/qimen-dunjia.skill) - 一句话直断九宫排盘
-- [黄大仙灵签](https://github.com/leslietong2046-ship-it/huangdaxian-lingqian.skill) - 抽签解签心诚则灵
+## 📜 License
 
+MIT License - 自由使用、修改和分发
+
+---
+
+<div align="center">
+
+**三式之首，帝王之学。**
+
+[![ClawHub](https://img.shields.io/badge/ClawHub-Skill-blue)](https://clawhub.ai/skills/qimen-dunjia-skill)
+
+</div>
