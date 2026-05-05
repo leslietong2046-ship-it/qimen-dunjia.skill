@@ -4,7 +4,7 @@
 >
 > 直断，不教学。输入问题，直接给结论。工程化格式输出，九宫+用神+格局+应期一个不少。
 
-> v1.1.1
+> v2.0.0
 
 ---
 
@@ -517,3 +517,25 @@
 
 本技能由「奇门遁甲」开发，传承古法，结合现代实用。
 如有疑问，请咨询专业人士。
+
+---
+
+## 🔧 CLI用法（命令行工具）
+
+如需在命令行快速排盘，可使用 `references/qimen.py`：
+
+```bash
+# 查看帮助
+python references/qimen.py --help
+
+# 当前时辰排盘
+python references/qimen.py
+
+# 指定时辰排盘（格式：YYYY-MM-DD HH:MM）
+python references/qimen.py --time "2024-01-15 14:30"
+
+# 直断模式
+python references/qimen.py --question "跳槽好不好"
+```
+
+**注意**：CLI工具为可选辅助，主要使用方式是在对话中直接描述问题。
